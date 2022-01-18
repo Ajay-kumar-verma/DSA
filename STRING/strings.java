@@ -6,9 +6,8 @@ public class strings{
     // it is a sequence of character
    
     //It must be surroungdedby double quotes
-
    // declaration 
-   String  str1="Ajay";
+      String  str1="Ajay";
       String str2=new String("Sachin");
 
     System.out.println(str1);
@@ -22,7 +21,7 @@ System.out.println(str1.toUpperCase());
 System.out.println(str1.toLowerCase());
 
 // indexOf 
-System.out.println(str1.indexOf("j"));
+System.out.println(" Index of : "+str1.indexOf('y'));
 
 // " " it String  ' ' it means char
 
@@ -75,12 +74,37 @@ System.out.println(exp.startsWith("AB")+"\n"+exp.endsWith("JI"));
 // toCharArray() it return new character Array
 
 char c_ar[]=exp.toCharArray();
-System.out.println(c_ar);
+  for(char x:c_ar)
+     System.out.println(x);
 
 
 // split return array of string 
 String s_ar[]=exp.split("");
-System.out.println(s_ar);
+   for(String x:s_ar)
+     System.out.println(x);
 
-}
+System.out.println("SUBSTRING ------------");
+String sub="Ajay kumar verma ";
+
+System.out.println(sub.substring(3,8));
+
+
+System.out.println("Any object into an String ........");
+  System.out.println(String.valueOf(123456).getClass().getName());
+  Integer x=34567;
+
+System.out.println(x.getClass());
+
+
+
+System.out.println("Comparision between two String ............");
+
+String cs1="A",cs2="C";
+
+System.out.println(cs1==cs2);
+System.out.println(cs1.charAt(0)==cs2.charAt(0));
+
+
+
+    }
 }
