@@ -6,10 +6,9 @@ using namespace std;
 
 // It is a recusion function that call itself again and  again 
 long power_A(int a, int n){  // accepting base a  and power n 
-    if(n==0){   // if n==0 it return 1
+    if(n==0)   // if n==0 it return 1
         return 1; 
-    }
-
+    
     else if(n%2==0){ // it is when   n is even 
          long result=power_A(a,n/2); //calculating power of a to power n/2
          return result*result;  //and multiple itself 

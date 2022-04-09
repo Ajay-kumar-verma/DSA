@@ -2,20 +2,19 @@
 public class merge_sort {
 
     public static void main(String args[]){
-
        int a[]={4,3,5,2,6,-8};
-       
+    
             sort(a,0,5);
     for(int x:a)
        System.out.print(x+" ");
 
-       
+      
     }
     // This is for sorting  
   static void  sort(int a[],int l,int r){
        if(l==r)  return;   
          
-      int m=(l+r)/2; 
+      int m=l+(r-l)/2; 
        sort(a,l,m);
        sort(a,m+1,r);
        merge(a,l,m,r);

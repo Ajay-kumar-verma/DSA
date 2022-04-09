@@ -9,19 +9,21 @@ public class bubble_sort {
 
 }
 
+// best way solution 
 static void  sort(int a[]){
  for(int i=0;i<a.length;i++){
-  
+   boolean swp=true; 
    for(int j=0;j<a.length-1;j++){
       if(a[j]>a[j+1]){
-           int temp= a[j];
-            a[j]=a[j+1];
-            a[j+1]=temp;
-         
-      }
+           a[j]=a[j]^a[j+1];
+           a[j+1]=a[j]^a[j+1];
+           a[j]=a[j]^a[j+1];
+        swp=false;
+         }
                   
    } 
-  
+  if(swp) break;
+
  }
  return ;
 

@@ -1,25 +1,29 @@
 import java.util.Scanner;
 public class operation{
-public static void main(String[] args)
+ static    Scanner sc= new Scanner(System.in);
+  public static void main(String[] args)
 {
-    Scanner sc= new Scanner(System.in);
-    for(;;)
+     for(;;)
     {
      System.out.println("-------------MENU-----------"); 
      System.out.println("1 : Insert\t2 : Display");
      System.out.println("3 : Search\t4 : Delete");
-    switch(sc.nextInt())
+     System.out.println("5 : No of nodes \t6 : Height of tree");
+     switch(sc.nextInt())
     {   
     case 1: m.insert();break;
     case 2: m.display();break;
     case 3: m.search();break;
     case 4: m.delete();break;
+    case 5: m.Nodes();break;
+    case 6: m.Height();break;
+    
     default:
     System.out.println("Invalid choice ..!");
     System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
        break;
     } 
-    sc.nextLine();  
+  
   }
 
 }
@@ -34,12 +38,11 @@ public static void main(String[] args)
 
 class m{
 static Node root=null;
-
+static Scanner sc= new Scanner(System.in);
 
 // INSERTION AND DELETION 
 // INSERT 
 static void insert(){
-Scanner sc= new Scanner(System.in);
 System.out.print("Enter data : ");
 Node  node=new Node(sc.nextInt());
                 sc.nextLine();
@@ -68,7 +71,7 @@ if(root==null){root=node; return;}
 // DELETION OPERATION
  static void delete()
    {   System.out.print("Enter key : "); 
-       Scanner sc= new Scanner(System.in);
+      
        int key = sc.nextInt();sc.nextLine();
        //  delete number 
        
@@ -170,7 +173,7 @@ static void Highlow(Node temp)
 static void search()
 {   if(root==null){System.out.println("Empty Tree.. "); return ;}
     System.out.print("Enter key : ");
-    Scanner sc= new Scanner(System.in);
+   
     int key = sc.nextInt();sc.nextLine();
 
     Node temp=root;
@@ -185,9 +188,36 @@ static void search()
 // END SEARCH ....
 
 
+static int countleaf=0;
+static int Nodes(){
+  countleaf=0;
+  counts(root);
+System.out.println("Counts nodes : "+countleaf);
+  return countleaf;
+ }  
+
+static void  counts(Node node) {
+      if(node==null) return ;
+      countleaf++;
+      counts(node.ll);counts(node.rl);
+   
+   }
+
+// HEIGHT OF TREE_SET
+static int  Height(){ 
+  
+  System.out.println("Height is : "+Height(root));
+  return 0;}
+static int max(int a,int b){return (a>b)?a:b;} 
+static int  Height(Node node){
+  if(node==null) return -1;
+   return 1+max(Height(node.ll),Height(node.rl));
+
+}
 
 
 
+// END OF M 
 }
 
 

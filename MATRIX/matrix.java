@@ -56,15 +56,9 @@ while(i< r-1 && j >=0 )
    }
    
    if(key > m[i][j] )
-   {
-       i++;
-   }
-   
-
+     i++;
    if(key < m[i][j] )
-   {
        j--;
-   }
    
 
  }
@@ -75,7 +69,32 @@ if(!found)
 }
 
 }
+}
 
 
+class matrxType{
+
+
+    matrxType(){
+     int a[][]={{1,2,3}}; 
+       p(a);          
+ 
+
+    }
+
+
+
+static void p(int a[][]){
+
+
+   int len =a.length;
+  for(int x[]:a){
+      for(int y:x)
+         System.out.print(y+" "); 
+     System.out.println(); 
+   }
+
+// System.out.println("Print matrix : "+len);
+}
 
 }

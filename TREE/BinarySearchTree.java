@@ -1,9 +1,8 @@
 import java.util.Scanner;
-public class BinarySearchTree{
-public static void main(String[] args)
+public class BinarySearchTree{ static    Scanner sc= new Scanner(System.in);
+  public static void main(String[] args)
 {
-    Scanner sc= new Scanner(System.in);
-    for(;;)
+     for(;;)
     {
      System.out.println("-------------MENU-----------"); 
      System.out.println("1 : Insert\t2 : Display");
@@ -19,7 +18,7 @@ public static void main(String[] args)
     System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
        break;
     } 
-    sc.nextLine();  
+  
   }
 
 }
@@ -34,12 +33,11 @@ public static void main(String[] args)
 
 class m{
 static Node root=null;
-
+static Scanner sc= new Scanner(System.in);
 
 // INSERTION AND DELETION 
 // INSERT 
 static void insert(){
-Scanner sc= new Scanner(System.in);
 System.out.print("Enter data : ");
 Node  node=new Node(sc.nextInt());
                 sc.nextLine();
@@ -68,7 +66,7 @@ if(root==null){root=node; return;}
 // DELETION OPERATION
  static void delete()
    {   System.out.print("Enter key : "); 
-       Scanner sc= new Scanner(System.in);
+      
        int key = sc.nextInt();sc.nextLine();
        //  delete number 
        
@@ -170,7 +168,7 @@ static void Highlow(Node temp)
 static void search()
 {   if(root==null){System.out.println("Empty Tree.. "); return ;}
     System.out.print("Enter key : ");
-    Scanner sc= new Scanner(System.in);
+   
     int key = sc.nextInt();sc.nextLine();
 
     Node temp=root;
