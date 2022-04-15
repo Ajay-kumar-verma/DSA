@@ -6,15 +6,16 @@ public static void main(String[] args) {
 m1(head);
 
   System.out.println(head.data);
-    System.out.println(head.next.data);
+    // System.out.println(head.next.data);
 }
 
 static void m1(Node node){
-    // node.data=346;
-    Node x=node;
-    x.next=new Node(432);
+    // node.data=346;git 
+      node  =new Node(890);
+    // Node x=node;
+    // x.next=new Node(432);
 
-  m2(x);
+  // m2(x);
 } 
 
 static void m2(Node node){

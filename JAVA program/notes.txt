@@ -1,0 +1,9 @@
+Arrays.toString(arr); return string of array 
+Arrays.fill(arr,ele) :fill with given data
+Arrays.sort(arr):sort the arr in ascending order 
+Arrays.aslist(arr) :return list array can be assign to ArrayList 
+
+list.toArray(al) : return Array 
+
+
+
