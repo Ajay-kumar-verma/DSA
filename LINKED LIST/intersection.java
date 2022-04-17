@@ -7,7 +7,7 @@ public class intersection {
 // if loop is definatley it meet      
 
 public static void main(String[] args) {
-    
+System.out.print("ajay");
 
 }
 
