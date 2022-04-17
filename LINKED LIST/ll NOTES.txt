@@ -1,0 +1,67 @@
+1>) reverse linked list 
+ 1- iterartive way 
+ 2- recussive way 
+-----------------------------------------
+2>) adding two nums
+(reverse and perform operation and reverse again for final result)
+it is followed by basic mathematic
+-----------------------------------------------------
+3>) adding 1 at or single digit  
+----------------------------------------------
+4>) finding middle ele of linkedlist
+for odd and even 
+-----------------------------------
+5>) split linkedlist into two half part 
+-------------------------------------
+6>) checking palindrone using , statck 
+  reversing and cheking 
+  split into two half
+  reverse one and check
+------------------------------------
+7>) kth node from last 
+two pointer concept 
+first traverse kth 
+start travesing from head and k 
+---------------------------------------
+8>) deletion node withod previous node
+ node.data=node.next.data;
+ node.next=node.next.next;
+ it is not valid for last node 
+
+ -------------------------------------------
+9>) delete duplicate node from sorted and unsorted array
+ we can use set for unsorted ll
+--------------------------------------
+10>) merging two linkedlist
+--------------------------------------
+11>) loop and intersection of linkedlist
+
+  we can use set ,map 
+
+slow and fast pointer 
+
+here we can start moving with sam speed from that point and header   
+we can track prev node and split into singly_linked_list
+--------------------------------
+12>) Intersection node if there
+ using two loop cheking each node 
+using set ,map 
+making cyclic by link one node to other head
+comapring add of last node 
+
+len differnce  and we can compare each node by parreling moving
+
+moving first linked to secong and viverse 
+
+---------------------------------------------------------------------
+13>) finding sum of two node is k 
+in sorted doubly linkedlist
+
+----------------------------------
+14>) 
+ operation in circular linked lsit 
+
+-----------------------------------------
+15>) multilcationof two numners 
+in linked lsit 
+

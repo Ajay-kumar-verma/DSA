@@ -1,0 +1,263 @@
+Arrays problem 
+
+Searching and sorting 
+
+Linear search and Binary search 
+
+heap sort, radix sort ,merge and quick sort 
+Buuble and selection sort ,count sort and insertion 
+------------------------------------------------------------- 
+1>) k th min or max 
+sort and get eleby index 
+------------------------------------------ 
+2>) move all zeros one side 
+ways
+two pointer (conseider from start and end )
+storing zero in one array or counting zeros 
+swapping techning 
+using two arrays storing indisivual ele 
+
+for maintaining oder we can sotre array 
+for maintaining order of both we can both types of data
+----------------------------
+3>) moving negative ele one side 
+above  method are valid  
+      
+---------------------------------------
+4>) Union and intersection of array 
+using set and map easlily done  
+
+we can put one into set and other can be check  
+we use searching and sorting 
+
+Brute force soln
+
+using two loop checking ele of 
+1 array  in present or not in 2 array 
+-------------------------------------------------
+
+5>) sort 0 ,1 and  2 in array or know number 
+
+we can store frequency
+
+sorting know number form array 
+ 
+---------------------------------------------
+6>) reversing 
+  using new array ,swapping ,using statck 
+Two pointer concepts ( consider start and end pointer)
+
+----------------------------------------
+7>)palidrome 
+two pointer ,after reversing
+half reversing ,
+using statck  
+--------------------------------------------------
+8>)
+wave sorting 
+sort and swap each two ele 
+-------------------------------------------------------
+9>) Array rotation (clockwise and anti clock wise)
+   storing into new k size array than swapping and storin back to original array 
+// best way    
+reversing first 0 to k, k+1 to n-1 than reversing 0 to n-1 
+
+replace with index [(i+k)/n] or [(i-k+n)/n] deped on situtaion  
+----------------------------------------------------------------
+10>) printing all possible SubArray
+[continuous part of array]
+
+  i for starting point all time 
+  j  ending point all time 
+  
+  k b/w i to j 
+  print ele 
+
+ printing all posiible subset 
+//NOT DONE 
+
+------------------------------------------
+11>) largest sum of subArray (kadane s algorithms)
+
+ initially sum is large negative no
+ sum so far is 0
+
+kepp sum add if less than  0 reset it to 0 
+
+and whne ever sum exceed store in mememory 
+
+DP AND GReedy part 
+
+we can use above method also 
+----------------------------------------------------------
+12>) MAX MIN and index 
+
+ we can traverse whole array and kepp traking these part 
+It is used in selection sort {Same econcepts } 
+ 
+---------------------------------------------------
+13>) unique no and two uniuq no
+
+using xor for single unique no 
+
+  for two ,Itis there in bit manipulation
+
+----------------------------------------------------------
+14>) nums whose frequncy is greather n/2 
+Using map we can store the frequecy 
+// using collection framework
+we can sort 
+
+using two nested for loop 
+we can track frequecy 
+ 
+Boyes ,more algo
+int a[]={3,4,12,5,6,4,4,4,6,6,6,6,2};
+int n=a.length;
+
+int val=a[0];
+int count=1;
+
+for(int i=1;i<n;i++)
+{      
+     if(val==a[i]) count++;
+     else count--;
+
+     if(count==0){
+         val=a[i];
+         count=1;
+     }
+}
+
+again checking frequency
+-----------------------------------------------------------------------------------
+
+15>) largets SubArray aithmeatcis   {SubArray aithmatics }
+
+keep track differnce { pd } 
+
+increasing  count++ each time if macheses sequence 
+Otherwise set count =2;
+
+keep storing max length each time  
+
+  
+-----------------------------------------------------
+16>) len of largest SubArray of GP 
+
+initilaize 
+
+pr(previous ratio) =a[1]/a[0]
+
+count =2; min count  
+ 
+max=2;
+
+
+iterate from inde 2 to n-1 
+
+if statisfy ratio incrse count ++;
+Otherwise reset all except max 
+
+keep updating max each time 
+
+
+-------------------------------------------------------------------
+17>) Similar problem like Above two 
+
+largest subArray which are in ascending order 
+largest subArray which are in descneding order 
+largest subArray in  which more no of even or odd number   
+or any conditon
+subArray with zero some 
+
+//kadame algor for max len subArray 
+
+
+All the problem can be solved using brute force approach {10>)} 
+----------------------------------------------------------
+
+18>) min ,max  and sum  so far
+
+max differe
+
+keep tracking men and max value in single iteration 
+-------------------------------------------------------------
+
+============================================================
+ALL SUBARRAY PROBLEM can be solveld in o(n)time colexity with constatnt space 
+
+MOST IMPORTTANT  
+============================================================
+19>) subArray with zero sum
+ we use brute force approach 
+ two for loop 
+
+using set for storing sum so far 
+if repeat means sum of subarray is zero
+Or not if not therer 
+
+
+we can check for k as well 
+
+
+by checking sum-k exist or not  in set  
+----------------------------------------------------------
+20>)
+
+
+int a[]={3,4,6,7,-13,76,5};
+int n=a.length;
+boolean found=false;
+for(int i=0;i<n;i++){
+  int sum =a[i];
+      for(int j=i+1;j<n;j++){
+        sum+=a[j];
+        if(sum==0){found=true; break;}
+         
+    }
+    if(found) break;
+}
+
+Optimize way 
+
+we can use set and each time we can check in s (sum-k)
+is present or not 
+
+3 method
+we can sum from 0 to n-1 
+where sum is greather than k start substracting from 0 
+till come k or less than 
+
+repeat same proces again and again  
+ 
+WE CAN GET INDEX RANGE ALSO IF WE KEEP TRACKING
+
+subArray_zeroSum_ksum.java in this folder itself 
+
+---------------------------------------------------------------
+
+21>) firt positive int in given array  
+ search in array from 1 to n where n is size of array 
+store in set than search 
+// we can storein given num into index of another num
+
+
+-----------------------------------------------------------------
+22>) searching ele in sorted array in long(n)
+size of array is infinte 
+
+increase arange  of earch by 2^i 
+where i is natural no  
+------------------------------------------------------------------
+23>) first and last occurence of no in array using binary search
+only can be foun in sorted array
+first_last_occn 
+-----------------------------------------------------------------------
+24>)
+
+
+
+
+
+

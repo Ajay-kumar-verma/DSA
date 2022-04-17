@@ -1,0 +1,13 @@
+what to study 
+
+With space compexity (auxiluary space ) ,time complexity
+
+IN details  
+
+Bubble sort (iteraive and recursive)
+Selection sort (iterative and recursive way)
+Insertion sort 
+merge and quick sort (divide and conquer technique)
+heap sort
+count sort 
+radix sort  

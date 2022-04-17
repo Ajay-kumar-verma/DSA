@@ -1,4 +1,6 @@
-public class merge {
+package SORTING;
+
+public class Merge {
 
   public static void main(String[] args) {
  

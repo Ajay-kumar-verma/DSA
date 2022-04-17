@@ -1,0 +1,21 @@
+STRING PRPOBLEM
+
+Case conversion 
+upper to lower 
+lower to upper 
+
+-------------------------------------------
+
+int to char 
+char to int
+
+----------------------------------
+
+reverse of string 
+-------------------------------
+
+palidrome of string 
+--------------------------------------------------
+printing all permutaion
+
+--------------------------------------------   

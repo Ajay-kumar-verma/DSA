@@ -1,0 +1,92 @@
+for getting set bit (findeing present number of 1 in given number )
+n>0
+n=n&(n-1)
+fastest way to getting frequecy of set bit 
+ Brian Kernighan’s Algorithm: 
+
+It direct reflect to 1 or set bit 
+==========================================
+Example for Brian Kernighan’s Algorithm:  
+   n =  9 (1001)
+   count = 0
+
+   Since 9 > 0, subtract by 1 and do bitwise & with (9-1)
+   n = 9&8  (1001 & 1000)
+   n = 8
+   count  = 1
+
+   Since 8 > 0, subtract by 1 and do bitwise & with (8-1)
+   n = 8&7  (1000 & 0111)
+   n = 0
+   count = 2
+
+   Since n = 0, return count which is 2 now.
+
+----------------------------------------------------------------
+
+Getting first set bit from right side 
+1100011100
+output :100
+10010001
+output :1   
+10011100000
+output:100000
+
+output : no&~(no-1);
+
+what  happens when we subtract 1 from any number 
+form right side where 1 is make it 0 and before that one make it one (1)   
+form right side it make 0 where 1 is there and rest of bit make 1  
+
+-----------------------------------------------------------
+
+1>)finding unique number:
+ perform xor for all nums 
+
+--------------------------------------------
+2>) finding two unique  nums
+   1 step right most bit 
+    n1 and n2 consider as 0
+    performing & operation if 0 xor with n1 
+  else xor with n1 
+ 
+---------------------------------------------------
+3>) checking even numbeer odd number
+
+perfomoning & with 1 
+---------------------------------------------
+
+4>) counting bit
+ n>0
+  n=n&(n-1)    
+-------------------------------------------------
+
+5>) bit need to flip for n1 to n2 
+xor  give differnt bit 
+
+we can count now 
+
+------------------------------------------
+6>) power of 2 or for check power of 2
+  i<<2 multiply by 2 
+  i>>2 dividing by 2
+-----------------------------------------------
+7>) finding square of any number (without * ,+ ,/ ,- )
+
+If n is even, it can be written as
+  n = 2*x 
+  n2 = (2*x)2 = 4*x2
+If n is odd, it can be written as 
+  n = 2*x + 1
+  n2 = (2*x + 1)2 = 4*x2 + 4*x + 1
+ 
+  
+
+==========
+if (n % 2 != 0)
+            return ((square(x) << 2) + (x << 2) + 1);
+        else // If n is even
+            return (square(x) << 2);
+-----------------------------------------
+
+

@@ -1,0 +1,8 @@
+expression evaluat efrom left to right 
+and top to bottom 
+
+if(head==null && head.next==null)
+ and 
+if(head.next==null || head==null)  
+
+when it check head.next if head is null thrown error
