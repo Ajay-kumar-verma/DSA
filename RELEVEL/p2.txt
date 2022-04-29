@@ -1,0 +1,74 @@
+ 
+
+Alice has two arrays A and B of the same size N. She want to count the pairs which follow the following conditions
+
+Choose two indices i and j such that 1<= i <= j<= N
+(A_i - B_j) <= (B_i - A_j) 
+Alice is not good at programming so she asked you to count such pairs which follow the described conditions. Since the count can be very large so you have to print count modulo 998244353.
+
+ 
+
+Constraints :
+
+ 
+
+1 <=t <=10^3 
+1 <=N <=10^5
+-10^9 <=A[i], B[i] <=10^9
+ 
+
+Input Format :
+
+ 
+
+First-line contains a single integer t, the number of test cases.
+The first line of each test case contains a single integer N, the size of arrays A and B.
+The second line of each test case contains N integers, i.e the array A.
+The third line of each test case contains N integers, i.e the array B.
+The sum of N over all test cases doesn’t exceed 2*10^5
+ 
+
+Output Format :
+
+ 
+
+
+For each test case, output a single line— The number of pairs that follow the described condition modulo 998244353.
+
+ 
+
+Sample Input :
+
+ 
+
+3
+3
+18 4 15 
+7 3 17 
+5
+13 3 1 1 8 
+6 6 8 13 2 
+4
+20 15 9 8 
+10 12 10 14 
+
+ 
+
+ 
+
+Sample Output :
+
+ 
+
+1
+7
+2
+ 
+
+Note: Sample explanation is not given since the problem is quite simple to comprehend. 
+
+ 
+
+ 
+
+ 

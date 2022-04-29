@@ -1,0 +1,72 @@
+String is non-primitive data struture 
+beacause its size is not fixed 
+its length vary 
+Def:
+it is sequence of characters or characters arrays
+
+---------------------------
+1>) dock number any number with zero not at start point 
+---------------------------------------------
+2>)for checking anagram we can sort characters 
+and compare 
+-----------------------------------------------------
+3>) String in java is object and immutable
+we cant modify it or change it 
+
+StringBuilder and StringBuffer  
+are string class and it is changable 
+
+and it has append method also
+
+stringBuilder has reverse and append method
+
+--------------------------------------------------
+Converting String to int method
+
+Integer.parseInt();
+----------------------------------------
+Character  
+indexOf()
+ return first index of characters
+ LastIndexOf()
+  return last index of characters 
+charAt()
+return characters  
+
+we can use for loop as well to get char or index value
+
+contains() 
+return true if that sequence present or return false;
+
+startsWith();
+endsWith();
+
+
+------------------------------------------------------------
+The main difference between the .equals() method and == operator is that one is a method,
+and the other is the operator.
+We can use == operators for reference comparison (address comparison) 
+and .equals() method for content comparison. In simple words, == checks 
+if both objects point to the same memory location whereas .equals() evaluates 
+to the comparison of values in the objects.
+If a class does not override the equals method, then by default,
+it uses the equals(Object o) method of the closest parent class that has
+overridden this method. See Why to Override equals(Object) and hashCode() method ? in detail.
+
+// Java program to understand
+-------------------------------------------------------------
+=======================
+String subsequence 
+=======================
+
+A subsequence of a string is a new string that is formed from the  original string by deleting
+some (can be none) of the characters without disturbing the relative positions of the remaining characters.
+
+-------------------------------------------------------------------------------------------------
+============================
+SUbstring
+===========================
+The substring() method extracts characters, between two indices (positions), 
+from a string, and returns the substring. The substring() method extracts characters 
+from start to end (exclusive)
+

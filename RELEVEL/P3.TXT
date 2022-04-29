@@ -1,0 +1,102 @@
+Problem Statement:
+ 
+
+Alice has an array A of size N.
+
+She is very much obsessed with numbers which is a power of two. She wants to count the maximum number of pairs she can make out of these N integers so that the sum of elements in each pair is a power of two. Note that a number A_i can not belong to multiple pairs.
+
+Alice is not good at programming so she asked you to count the maximum number of such pairs.
+
+ 
+
+Note:- A number X is said to be a power of two if we can write X = 2^p, where p is a non-negative integer.
+
+ 
+
+ 
+
+Constraints:
+
+ 
+
+1 <= t  <=10^3 
+1 <=N <=2*10^5
+1 <=A[i] <=10^12
+ 
+
+ 
+
+Input Format:
+
+ 
+
+First-line contains a single integer t, the number of test cases.
+The first line of each test case contains a single integer N, the number of elements in array A.
+The second line of each test case contains N positive integers.
+The sum of N over all test cases doesn’t exceed 2*10^5
+ 
+
+ 
+
+Output Format:
+
+ 
+
+For each test case, output a single line— the maximum number of pairs she can get so that summation of the elements of each pair is a power of two.
+ 
+
+ 
+
+Sample Input:
+
+ 
+
+2
+5
+3 11 16 5 13
+4
+2 6 14 1
+
+ 
+
+
+Sample Output:
+
+ 
+
+2
+1
+
+ 
+
+ 
+
+
+Explanation of Sample:
+
+ 
+
+Test case 1: Here we can make a maximum of two pairs, 
+                      (3, 13)---> Summation = 3+13 = 16 = 24
+                      (11, 5)---> Summation = 11+5 = 16 = 24
+
+
+Test case 2: Here we can make a maximum of one pair, 
+                      (2, 6)---> Summation = 2+6 = 8 = 23
+
+ 
+
+ 
+
+ 
+
+ 
+
+Things to Note for the Candidate:
+
+ 
+
+You can use your own IDE like Visual Studio Code, Eclipse, or any other IDE that you are comfortable with to build your solution code.
+The IDE provided on the platform is purely for submission. Avoid using the IDE for coding out the solution.
+Test against any custom input in your own IDE. In the IDE provided on the platform, you cannot pass custom test cases and see the output. 
+Use standard input and standard output in your program for the IDE to run the test cases smoothly against your code. We are giving a sample problem statement along with a solution that will pass the test cases in the IDE. - Sample Problem Statement  (Right Click and Open in New Tab to view.)

@@ -1,0 +1,13 @@
+Hash is a technioue of storing the data in such a way 
+
+operation can be constant time  
+
+and allows to perform insertion ,deletion, and updation in constatnt time 
+
+In array we can store the information according to index value
+
+and we can perform operation in constatnt time 
+===================================================
+https://www.geeksforgeeks.org/direct-address-table
+=========================================================
+

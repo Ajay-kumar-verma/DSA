@@ -4,10 +4,31 @@ With space compexity (auxiluary space ) ,time complexity
 
 IN details  
 
-Bubble sort (iteraive and recursive)
+Bubble sort (iteraive and recursive) 
+Time complexity =n*n 
+in best case =n
+
+If no swap means array are sorted 
+
+
 Selection sort (iterative and recursive way)
+worst case =n*n;
+best  case =n*n
+
+
 Insertion sort 
+worst case n*n
+best case n 
+
+
 merge and quick sort (divide and conquer technique)
 heap sort
 count sort 
-radix sort  
+radix sort 
+
+
+
+
+https://www.geeksforgeeks.org/time-complexities-of-all-sorting-algorithms/?ref=leftbar-rightbar
+
+ 

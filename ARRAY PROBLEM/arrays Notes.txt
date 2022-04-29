@@ -1,14 +1,18 @@
-Arrays problem 
-
-Searching and sorting 
-
+=============Arrays problem ===============
+------------------------------------------------
+Searching and sorting                                         
+-----
 Linear search and Binary search 
-
+----         
 heap sort, radix sort ,merge and quick sort 
 Buuble and selection sort ,count sort and insertion 
 ------------------------------------------------------------- 
 1>) k th min or max 
 sort and get eleby index 
+         
+            [[1]] quick select techning or algo 
+            it is purely based on quick sort   
+
 ------------------------------------------ 
 2>) move all zeros one side 
 ways
@@ -19,6 +23,8 @@ using two arrays storing indisivual ele
 
 for maintaining oder we can sotre array 
 for maintaining order of both we can both types of data
+    ==Most Importrtant==
+
 ----------------------------
 3>) moving negative ele one side 
 above  method are valid  
@@ -89,10 +95,13 @@ and whne ever sum exceed store in mememory
 DP AND GReedy part 
 
 we can use above method also 
-----------------------------------------------------------
-12>) MAX MIN and index 
 
- we can traverse whole array and kepp traking these part 
+         [[2]] (kadane s algorithms)
+
+----------------------------------------------------------
+12>) MAX MIN and index  and sum so far
+
+we can traverse whole array and kepp traking these part 
 It is used in selection sort {Same econcepts } 
  
 ---------------------------------------------------
@@ -100,7 +109,8 @@ It is used in selection sort {Same econcepts }
 
 using xor for single unique no 
 
-  for two ,Itis there in bit manipulation
+for two ,Its there in bit manipulation
+        [[IMPORTANT]] 
 
 ----------------------------------------------------------
 14>) nums whose frequncy is greather n/2 
@@ -130,6 +140,8 @@ for(int i=1;i<n;i++)
 }
 
 again checking frequency
+  
+ [[3]] [[Boyes ,more algo]]
 -----------------------------------------------------------------------------------
 
 15>) largets SubArray aithmeatcis   {SubArray aithmatics }
@@ -235,6 +247,9 @@ WE CAN GET INDEX RANGE ALSO IF WE KEEP TRACKING
 
 subArray_zeroSum_ksum.java in this folder itself 
 
+
+if numbers are negative positive that time we hav to use spaces
+othwer wise we can use we keep adding if exceeded start deducting from left side   
 ---------------------------------------------------------------
 
 21>) firt positive int in given array  
@@ -242,22 +257,56 @@ subArray_zeroSum_ksum.java in this folder itself
 store in set than search 
 // we can storein given num into index of another num
 
-
 -----------------------------------------------------------------
 22>) searching ele in sorted array in long(n)
 size of array is infinte 
 
 increase arange  of earch by 2^i 
 where i is natural no  
+
 ------------------------------------------------------------------
 23>) first and last occurence of no in array using binary search
 only can be foun in sorted array
 first_last_occn 
 -----------------------------------------------------------------------
-24>)
+24>) pair of ele  in given array  
+of triplt in given array  or fourth in given array 
+
+If we can peak randomly we can sort and use two pointer or binary seach 
+-------------------------------------------------------------------
+25>)
+problem over sunSequence 
+subSequence :[Order should be maintan or skipping some part]
+subArry :[Continuour array b\w two indices]
 
 
+A Substring takes out characters from a string placed between two specified indices
+in a continuous order. On the other hand, subsequence 
+can be derived from another sequence by deleting some or none
+of the elements in between but always maintaining 
+the relative order of elements in the original sequence
+---------------------------------------------------
 
+A subsequence of an array is an ordered subset
+of the array's elements having the same
+sequential ordering as the original array. For exampl
+e, the subsequences of array are , , , , , , and .
 
+------------------------------------------------------------------------
+
+Rotational theorem 
+using reverse 
+
+for left rotation  
+
+reverse(a,0,d);
+reverse(a,d+1,n);
+reverse(a,0,n);
+
+for right rotation  
+
+reverse(a,0,n);
+reverse(a,0,d);
+reverse(a,d+1,n);
 
 

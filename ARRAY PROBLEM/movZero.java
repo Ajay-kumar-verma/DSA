@@ -1,5 +1,4 @@
 public class movZero {
-
 public static void main(String args[])
 {
 

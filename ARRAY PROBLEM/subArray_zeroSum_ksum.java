@@ -66,7 +66,45 @@ for(int i=0;i<n;i++){
 
 // System.out.println(found);
 
+// sunArray with given sum 
 
+
+// int st=0;
+//         int e=0;
+        
+//         int sum=0;
+        
+//          int k=0;
+        
+//          int i=0;
+//         for(;i<n;i++){
+//             sum+=arr[i];
+         
+//            while(sum>s){
+//               sum=sum-arr[k++];  
+//            }
+//            if(sum==s){
+//                st=k;
+//                e=i;
+//                 break;
+//            }         
+            
+            
+//         }
+        
+//         ArrayList<Integer> a=new ArrayList<Integer>();
+        
+//         if(i==n){
+//             a.add(-1);
+//         }
+//         else{
+//         a.add(st+1);
+//         a.add(e+1);
+//         }
+//         return a;
+        
+        
+//     }
 
 
 
