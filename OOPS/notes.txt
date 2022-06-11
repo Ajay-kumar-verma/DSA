@@ -1,3 +1,16 @@
 oops 
 https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/?ref=leftbar-rightbar
 
+
+
+
+-----------------------
+
+we have three way writing coding
+1>) procedure based program 
+2>) functional based program 
+3>) object orient programminng
+
+
+----------+++++++++++++_-----------
+Now we focus on object orientend concept and methodology  

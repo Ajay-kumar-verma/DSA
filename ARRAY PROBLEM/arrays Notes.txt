@@ -308,5 +308,7 @@ for right rotation
 reverse(a,0,n);
 reverse(a,0,d);
 reverse(a,d+1,n);
-
+---------------------------
+finding fixed point in array
+using binar search in sorted array
 

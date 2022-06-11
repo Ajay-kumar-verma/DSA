@@ -21,7 +21,7 @@ int c[]=new int[26];
 
 for(int i=0;i<26;i++){
    if(c[i]!=0)
-        System.out.println((char)(i+'a'));
+        System.out.print((char)(i+'a'));
 }
  
 
