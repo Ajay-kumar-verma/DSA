@@ -25,6 +25,8 @@ while(top<=botm && left<=rgt){
    a[top][i]=k++;   
    top++; 
 
+
+   
 for(int i=top;i<=botm;i++)
    a[i][rgt]=k++;
  rgt--;  
