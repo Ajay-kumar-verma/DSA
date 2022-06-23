@@ -13,11 +13,10 @@ public class sorted_array {
    if(a.length-1==i)
     return true;
 
- if(a[i]>a[i+1])
-      return false;
+//  if(a[i]>a[i+1])
+//       return false;
  
-
-return sort(a,i+1); 
+ return  a[i]<a[i+1] && sort(a,i+1); 
 
 }  
 
